@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScope | Discover Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Cine<span>Scope</span></a>
+        <nav>
+            <a href="#home" id="home-link">Home</a>
+            <a href="#movies">Explore Movies</a>
+            <a href="#favorites">My Watchlist</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">YOUR NEXT FAVORITE FILM AWAITS</p>
+            <h1>Find your next <span>favorite movie.</span></h1>
+            <p class="hero-description">
+                Explore movies, discover hidden gems, and build your personal watchlist.
+            </p>
+
+            <form class="search-box" id="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search for a movie..."
+                    aria-label="Search movies"
+                >
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="movie-section" id="movies">
+            
+<div class="section-heading">
+    <div>
+        <p class="eyebrow">HANDPICKED FOR YOU</p>
+        <h2>Explore Movies</h2>
+    </div>
+    <p id="movie-count">Discover something new</p>
+</div>
+
+<div class="movie-controls">
+    <select id="genre-filter" aria-label="Filter movies by genre">
+        <option value="all">All Genres</option>
+        <option value="Action">Action</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Animation">Animation</option>
+    </select>
+
+    <select id="sort-by" aria-label="Sort movies">
+        <option value="default">Sort: Recommended</option>
+        <option value="rating">Highest Rated</option>
+        <option value="year-new">Newest First</option>
+        <option value="year-old">Oldest First</option>
+        <option value="title">Title: A–Z</option>
+    </select>
+</div>
+
+
+            <div class="movie-grid" id="movie-grid">
+                <!-- Movie cards will appear here -->
+            </div>
+            
+<div class="load-more-container">
+    <button id="load-more-btn" type="button" hidden>
+        Load More Movies
+    </button>
+</div>
+
+        </section>
+
+        <section class="movie-section" id="favorites">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SAVE FOR LATER</p>
+                    <h2>My Watchlist</h2>
+                </div>
+            </div>
+
+            <div class="movie-grid" id="favorites-grid">
+                <p class="empty-message">Your watchlist is waiting for its first movie!</p>
+            </div>
+        </section>
+        
+<div class="modal" id="movie-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close movie details">
+            &times;
+        </button>
+
+        <img id="modal-poster" src="" alt="" class="modal-poster">
+
+        <div class="modal-info">
+            <p class="eyebrow">MOVIE DETAILS</p>
+            <h2 id="modal-title"></h2>
+            <p id="modal-meta" class="movie-year"></p>
+            
+<p id="modal-description" class="modal-description"></p>
+<p id="modal-rating" class="movie-rating"></p>
+
+
+<button
+    id="trailer-button"
+    class="trailer-button"
+    type="button"
+    hidden
+>
+    ▶ Watch Trailer
+</button>
+
+<div id="trailer-container" class="trailer-container" hidden>
+    <iframe
+    id="trailer-player"
+    src=""
+    title="Movie trailer"
+    allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+></iframe>
+
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <footer>
+        <p>Made with care by Haniya · CineScope © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
