@@ -1,4 +1,4 @@
-const API_KEY = "9fb46d78ad94ec2cd11092d27c3ee7a2";
+const API_KEY = "YOUR_TMDB_API_KEY";
 const API_URL = "https://api.themoviedb.org/3";
 let allMovies = [];
 
