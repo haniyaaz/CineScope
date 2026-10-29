@@ -2,6 +2,14 @@
 
 CineScope is a movie discovery website I built using HTML, CSS, and JavaScript. It uses the TMDB API to display movie information and lets users search for films, explore details, and keep track of their favorites.
 
+## Preview
+
+### Home Page
+![CineScope Home Page](cinescope-preview.png)
+
+### Movie Cards
+![CineScope Movie Cards](cinescope1-preview.png)
+
 ## Features
 
 - Browse popular movies
